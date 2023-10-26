@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class PredicateMain {
+public class SoldiersMain {
     public static void main(String[] args) {
         List<Soldier> soldiers = new ArrayList<>();
         soldiers.add(new Soldier(4,"Jens"));
