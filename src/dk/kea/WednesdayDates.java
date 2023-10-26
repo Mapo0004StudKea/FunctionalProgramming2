@@ -2,11 +2,9 @@ package dk.kea;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class WednesdayDates {
     public static List<LocalDate> getWeekdayDates(int year, Predicate<LocalDate> weekdayFilter) {
@@ -20,7 +18,7 @@ public class WednesdayDates {
     }
 
     public static void main(String[] args) {
-        int year = 2023; // Replace with your desired year
+        int year = 2023;
 
         Predicate<LocalDate> isWednesday = date -> date.getDayOfWeek() == DayOfWeek.WEDNESDAY;
 
