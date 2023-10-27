@@ -11,8 +11,8 @@ public class StreamLambdaDemo {
 
         // Filter even numbers
         List<Integer> evenNumbers = numbers.stream()
-                .filter(x -> x % 2 == 0)
-                .collect(java.util.stream.Collectors.toList());
+                .filter(x -> x % 2 == 0).toList();
+                //.collect(java.util.stream.Collectors.toList());
         System.out.println("Even Numbers: " + evenNumbers);
 
         // Square each number
@@ -28,9 +28,15 @@ public class StreamLambdaDemo {
 
         // Find the maximum number
         int max = numbers.stream()
+                //.max((x, y) -> Integer.compare(x, y))
                 .max(Integer::compare)
                 .orElse(0);
         System.out.println("Maximum Number: " + max);
+
+        numbers.stream()
+                //.forEach(x -> System.out.println(x));
+                .forEach(System.out::println);
+
     }
 }
 
