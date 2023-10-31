@@ -11,6 +11,8 @@ public class DatesWeekdayOpg5 {
 
     public static void main(String[] args) {
         LocalDate birthday = LocalDate.of(2020,9,7);
+
+        System.out.println("Birthday: " + birthday + " Weekday: " + birthday.getDayOfWeek());
         Stream<LocalDate> tenDates = IntStream.range(1,10).mapToObj(i -> birthday.plusYears(i));
         //tenDates.forEach(System.out::println);
         Stream<String> dateStream = tenDates.map(date -> "Year=" + date.getYear() + " Weekday=" + date.getDayOfWeek());
