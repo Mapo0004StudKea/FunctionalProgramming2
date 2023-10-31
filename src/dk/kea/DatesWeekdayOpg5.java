@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class DatesWeekday {
+public class DatesWeekdayOpg5 {
 
     public static void main(String[] args) {
         LocalDate birthday = LocalDate.of(2020,9,7);

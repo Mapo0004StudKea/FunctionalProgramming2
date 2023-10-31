@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class Main {
+public class ConsumerOpgave234 {
 
     public static void main(String[] args) {
         Consumer<String> toUpper = x -> System.out.println(x.toUpperCase());
@@ -24,11 +24,11 @@ public class Main {
 
         list.forEach(out);
 
-        ZeroOneTwoArgument.TwoArgument twoPlus = (x, y) -> x + y;
+        ZeroOneTwoArgumentOpg1.TwoArgument twoPlus = (x, y) -> x + y;
         int ss = sumTwoArgFunction(list, twoPlus);
         System.out.println(ss);
 
-        ZeroOneTwoArgument.TwoArgument twoMult = (x, y) -> x * y;
+        ZeroOneTwoArgumentOpg1.TwoArgument twoMult = (x, y) -> x * y;
         ss = sumTwoArgFunction(list, twoMult);
         System.out.println(ss);
 
@@ -58,7 +58,7 @@ public class Main {
         }
     }
 
-    static int sumTwoArgFunction(List<Integer> list, ZeroOneTwoArgument.TwoArgument two){
+    static int sumTwoArgFunction(List<Integer> list, ZeroOneTwoArgumentOpg1.TwoArgument two){
         int sum = 0;
         for (int t : list) {
             sum += two.myFunc(t, t);
@@ -66,7 +66,7 @@ public class Main {
         return sum;
     }
 
-    static int valutaomregner(List<Integer> list, ZeroOneTwoArgument.TwoArgument two, int kurs) {
+    static int valutaomregner(List<Integer> list, ZeroOneTwoArgumentOpg1.TwoArgument two, int kurs) {
         int sum = 0;
         for (int t : list) {
             sum += two.myFunc(t, kurs);

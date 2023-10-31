@@ -1,6 +1,6 @@
 package dk.kea;
 
-public class ZeroOneTwoArgument {
+public class ZeroOneTwoArgumentOpg1 {
     public static void main(String[] args) {
         ZeroArgument z = () -> System.out.println("Hello I am interface");
         printZero(z);
