@@ -35,6 +35,7 @@ public class ZeroOneTwoArgument {
         public int myFunc(int a, int b);
     }
 
+    // opgave 1
     public static void printOne(String x, OneArgument z1){
         z1.myFunc(x);
     }

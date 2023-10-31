@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+// opgave 6
 public class WednesdayDates {
     public static List<LocalDate> getWeekdayDates(int year, Predicate<LocalDate> weekdayFilter) {
         LocalDate startDate = LocalDate.of(year, 5, 1);

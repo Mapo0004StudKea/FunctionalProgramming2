@@ -7,7 +7,7 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class Excercises {
+public class JavaFunctionalProgrammingExcercises {
     public static void main(String[] args) {
         BiFunction<Integer, Integer, Integer> add = (a, b) -> a + b;
         System.out.println(add.apply(2, 3)); // Output: 5

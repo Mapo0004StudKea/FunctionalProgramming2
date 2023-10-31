@@ -11,10 +11,10 @@ public class Main {
         toUpper.accept("viggo");
 
         Consumer<Long> square = t -> System.out.println(t*t);
-        square.accept(50l);
+        square.accept(50L);
 
+        // opgave 3 - brug af metode
         List<String> lstStr = Arrays.asList("hej", "du", "der");
-
         forEachString(lstStr, toUpper);
         forEach(lstStr, toUpper);
 
@@ -37,18 +37,21 @@ public class Main {
         int pengedk = valutaomregner(dollarSedler, twoMult, 6);
         System.out.println("du har dk=" + pengedk);
 
+        // opgave 4 brug
         //Decimal dollar
         List<Double> dollars = Arrays.asList(1.0, 5.0, 10.0);
         double pengedkdec = valutaomregnerG(dollars, (amount,kurs) -> (amount*kurs) , 6.55);
         System.out.println("du har dk=" + pengedkdec);
     }
 
+    // opgave 2
     static void forEachString(List<String> listOfStrings, Consumer<String> consumer){
         for (String s:listOfStrings){
             consumer.accept(s);
         }
     }
 
+    // opgave 3
     static <T> void forEach(List<T> lst, Consumer<T> consumer) {
         for (T t:lst){
             consumer.accept(t);
@@ -69,8 +72,9 @@ public class Main {
             sum += two.myFunc(t, kurs);
         }
         return sum;
-    };
+    }
 
+    // opgave 4
     public interface TwoArgumentG<T> {
         public T myFunc(T a, T b);
     }
@@ -80,8 +84,6 @@ public class Main {
             sum += two.myFunc(d, kurs);
         }
         return sum;
-    };
-
-
+    }
 
 }
