@@ -16,6 +16,7 @@ public class ZeroOneTwoArgumentOpg1 {
         int i2 = twomult.myFunc(4,5);
         System.out.println("i2=" + i2);
 
+        // opgave 1 brug
         printOne("x", out);
 
     }
