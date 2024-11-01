@@ -17,6 +17,11 @@ public class SoldiersMain {
         soldiers.add(new Soldier(5,"Kurt"));
 
         soldiers.forEach(s -> System.out.println(s));
+/*
+        for (Soldier soldier : soldiers){
+            System.out.println(soldier);
+        }
+  */
 
         System.out.println("High Ranked:");
         Predicate<Soldier> isHighRanked = soldier -> soldier.getRank() > 3;
